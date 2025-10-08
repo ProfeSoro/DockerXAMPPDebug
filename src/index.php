@@ -4,6 +4,7 @@ echo ("Hello, World!<br /><br />");
 echo ("You're using PHP " . phpversion() . ".<br />");
 
 // Test database$serverName = "db";
+$serverName = "db";
 $databaseName = "root_db";
 $dbUsername = "root";
 $dbPassword = "root";
@@ -31,5 +32,3 @@ try {
 }
 
 echo ("Detected database: {$dbVersion}<br />");
-
-phpinfo();
