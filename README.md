@@ -1,4 +1,4 @@
-# XAMPP Stack using Docker (Compose)
+# XAMPP Stack using Docker (Compose) with XDebug
 
 You can use this stack to replace your XAMPP instances. It contains a very basic setup with:
 - PHP 8.2
