@@ -1,47 +1,48 @@
-# XAMPP Stack using Docker (Compose) with XDebug
+# XAMPP Stack usando Docker (Compose) con XDebug
 
-You can use this stack to replace your XAMPP instances. It contains a very basic setup with:
+Puedes usar esta pila para sustituir la instalación de XAMPP en tu qeuipo. Contiene una configuración básica con:
 - PHP 8.2
 - MariaDB 11.3.2
 - PHPMyAdmin 5.2.1
 
-**You should only use this for testing/development! It is NOT suitable for production.**
+**Deberías usar esta pila únicamente para desarrollo/pruebas. No se recomienda para aplicaciones en producción.**
 
-## Configuration
+## Configuración
 - Database:
   - Root user: _root_
   - Root password: _root_
   - Secondary user: _user_
   - Secondary user password: _user_
   - Hostname: _db_
-  - Data is stored in the `mariadb_data` directory
+  - Los datos de la base de datos se almacenan en el directorio `mariadb_data`
 - PHPMyAdmin:
-  - Autologin using the credentials above
+  - Autologin con las credenciales de Database
 - PHP:
   - Enabled Apache modules: _rewrite_
   - Installed extensions: _mysqli_, *pdo_mysql*, _pdo_
   - Installed xdebug
 
-## Using the database in PHP
-To use the database in your PHP application, you can refer to the database using it's hostname (_db_). Check the example `src/index.php` file.
+## Como usar la base de datos en PHP
+Para usar la base de datos en tu aplicación PHP, debes usar como hostname (_db_). Puedes consultar el ejemplo del fichero `src/index.php`.
 
-## Running
-To run the stack, do the following:
-1. Download and install Docker for your OS.
-2. Clone this repo.
+## Ejecutar la pila XAMPP
+Para utilizar esta pila debes seguir los siguientes pasos:
+
+1. Descargar e instalar Docker para tu sistema operativo.
+2. Clonar este repositorio.
    ```sh
-   $ git clone ... repository_name
+   $ git clone ... DockerXAMPPDebug
    ```
-3. Use Docker Compose to run.
+3. Usar Docker para levantar los contenedores.
    ```sh
    $ docker compose up -d
    ```
 
 
-## Configuring VSC for XDebug
-- Install PHP Debug extension
-- Create a launch.json file into the root directory
-- Paste this into launch.json
+## Configurar Visual Studio Code para XDebug
+- Instalar la extensión 'PHP Debug'.
+- Crear un fichero 'launch.json' en el directorio raíz del repositorio (ya viene creado).
+- Poner lo siguiente en el fichero 'launch.json'
 ```
 {
   "version": "0.2.0",
