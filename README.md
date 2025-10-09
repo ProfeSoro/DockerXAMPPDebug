@@ -31,7 +31,7 @@ Para utilizar esta pila debes seguir los siguientes pasos:
 1. Descargar e instalar Docker para tu sistema operativo.
 2. Clonar este repositorio.
    ```sh
-   $ git clone ... DockerXAMPPDebug
+   $ git clone https://github.com/ProfeSoro/DockerXAMPPDebug.git
    ```
 3. Usar Docker para levantar los contenedores.
    ```sh
