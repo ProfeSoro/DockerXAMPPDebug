@@ -1,19 +1,15 @@
 services:
   db:
-    image: mariadb:11.3.2-jammy
+    image: mysql
     restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: root_db
-      MARIADB_USER: user
-      MARIADB_PASSWORD: user
-      TZ: Europe/Bratislava
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
     expose:
       - '3306'
     volumes:
-      - "./mariadb_data:/var/lib/mysql"
+      - "./mysql_data:/var/lib/mysql"
 
   phpmyadmin:
     image: phpmyadmin:5.2.1-apache
