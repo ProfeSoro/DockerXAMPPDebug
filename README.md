@@ -2,7 +2,7 @@
 
 Puedes usar esta pila para sustituir la instalación de XAMPP en tu qeuipo. Contiene una configuración básica con:
 - PHP 8.2
-- MariaDB 11.3.2
+- MySQL lastest
 - PHPMyAdmin 5.2.1
 
 **Deberías usar esta pila únicamente para desarrollo/pruebas. No se recomienda para aplicaciones en producción.**
@@ -11,10 +11,8 @@ Puedes usar esta pila para sustituir la instalación de XAMPP en tu qeuipo. Cont
 - Database:
   - Root user: _root_
   - Root password: _root_
-  - Secondary user: _user_
-  - Secondary user password: _user_
   - Hostname: _db_
-  - Los datos de la base de datos se almacenan en el directorio `mariadb_data`
+  - Los datos de la base de datos se almacenan en el directorio `mysql_data`
 - PHPMyAdmin:
   - Autologin con las credenciales de Database
 - PHP:
