@@ -58,3 +58,4 @@ Para utilizar esta pila debes seguir los siguientes pasos:
   ]
 }
 ```
+Si queremos depurar un proyecto que tenemos dentro de una subcarpeta de "src", basta con crear el fichero 'launch.json' en esa subcarpeta y cambiar el "pathMappings". Habría que poner "${workpsaceFolder}/.." ya que el directorio con el que estaríamos trabajando en VSCode sería el de la subcarpeta.
